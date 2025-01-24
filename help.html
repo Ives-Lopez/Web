@@ -1,0 +1,332 @@
+<html>
+    <title>Safebooru</title>
+    <style>
+      /*sidenav*/
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2{
+        margin: 20px;
+        
+      }
+      p{
+        margin: 20px;
+        margin-top: -1px;
+      }
+      b{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 112, 249);
+        font-size: 23px;
+        margin-left: 20px;
+      }
+      h4{
+        margin: 15px;
+        margin-left: 20px;
+        margin-bottom: -3px;
+        font-size: 20px;
+      }
+      h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-left: 19px;
+        margin-bottom: 0.1px;
+        margin-top: 100px;
+      }
+      .h{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-bottom: 0.1px;
+        margin-top: 3px;
+      }
+      input{
+        margin-left: 15px;
+        width: 155px;
+        height: 20px;
+      }
+      div button{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 3px;
+        margin-left: 15px;
+        width: 155px;
+        height: 20px;
+        text-align: center;
+      }
+      .sidenav {
+        height: 100%;
+        width: 190px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 0px;
+      }
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        color: rgb(0, 112, 249);
+        display: block;
+      }
+      
+
+
+
+      /*subnav with rgb bg*/
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(0, 112, 249);
+        
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 2px 16px;
+        text-decoration: none;
+        font-size: 13px;
+        margin-left: 12px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+        
+      }
+     
+
+
+
+      /*navbar with  white bg*/
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-left: 15px;
+        margin-bottom: 5px;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color:rgb(0, 112, 249);
+        text-align: center;
+        padding: 1px 10px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+
+
+
+
+      /*image gallery*/
+      div.gallery {
+          margin: 2px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+          margin-left: 190px;
+          margin-top: 50px;
+        }
+
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: 190px;
+        }
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+
+        
+        /*bottom nav*/
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+          overflow: hidden;
+          background-color: rgb(255, 255, 255);
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          margin-left: 750px;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #000000;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .navbar a:hover {
+          background: #f1f1f1;
+          color: black;
+        }
+
+        .navbar a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+        .main {
+          padding: 16px;
+          margin-bottom: 30px;
+        }
+
+
+
+
+
+    </style>
+        </head>
+        <body>
+          <b>Safebooru</b>
+          <ul>
+            <li><a class="active" href="#home">My Account</a></li>
+            <li><a href="front.html">Post</a></li>
+            <li><a href="comments">Comments</a></li>
+            <li><a href="wiki img/">Wiki</a></li>
+            <li><a href="aliases">Aliases</a></li>
+            <li><a href="artist">Artist</a></li>
+            <li><a href="tags">Tags</a></li>
+            <li><a href="pool">Pool</a></li>
+            <li><a href="forums">Forums</a></li>
+            <li><a href="stats">Stats</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="twitter">Twitter</a></li>
+            <li><a href="patreon">Patreon</a></li>
+          </ul>
+
+
+
+
+          <h2>Help: Post</h2>
+          <br>
+          <p>A post represents a single file that's been uploaded. Each post can have<br> 
+            several tags, comments, and notes. If you have an account, you can also add<br>
+            a post to your favorites.</p>
+
+            <h4 style="color: green;" class="h4">Search</h4>
+            <br>
+            <p>Searching for posts is straightforward. Simply enter the tags you want to<br> 
+                search for, separated by spaces. For example, searching for original panties<br> 
+                will return every post that has both the original tag AND the panties tag.</p>
+
+            <h4 style="color: green;" class="h4">Safe image only mode</h4>
+            <br>
+            <p>Sometimes viewing all our images is a bit of a problem. You may not be in a<br>
+                location where it is acceptable to view adult content. We have a temporary<br>
+                hacked together, way to only view safe images when searching our large<br>
+                image database. Not all images are rated correctly so you should not put too<br> 
+                much faith into this.<br>
+                <br>
+                You are still able to view adult images if you click the links to the posts directly.
+            </p>
+
+            <h4 style="color: green;" class="h4">Tag List</h4>
+            <br>
+            <p>In both the listing page and the show page you'll notice a list of tag links with<br>
+                 characters next to them. Here's an explanation of what they do:<br></p>
+
+               <h4 class="h4">+</h4><br>
+               <p>This adds the tag to the current search.<br></p>
+
+                <h4 class="h4">-</h4><br>
+                <p>This adds the negated tag to the current search.</p>
+
+                <h4 class="h4">950</h4><br>
+                <p>The number next to the tag represents how many posts there are. This isn't<br> 
+                always the total number of posts for that tag. It may be slightly out of date as<br> 
+                cache isn't always refreshed.</p>
+
+                <h4 class="h4">Color</h4><br>
+                <p>Some tag links may be colored green, purple, or red. Green means the tag<br> 
+                   represents a character. Purple means the tag represents a copyright (things<br> 
+                   like anime, manga, games, or novels). Red means the tag represents an artist.
+                   <br>
+                   When you're not searching for a tag, by default the tag list will show the last<br> 
+                   few tags added to the database. When you are searching for tags, the tag list<br> 
+                   will show related tags, alphabetically.
+                </p>
+
+                <h4 style="color: green;" class="h4">Types</h4><br>
+                <p>Tags can be typed. Currently there are only three types: artist, character, and<br> 
+                   copyright.</p>
+
+                <h4 class="h4">Artist</h4><br>
+                <p>Artist tags identify the tag as the artist. This doesn't mean the artist of the<br> 
+                   original copyrighted artwork (for example, you wouldn't use the barasui tag on<br> 
+                   a picture of Miu drawn by hanaharu_naruko).
+                   <br>
+                   When tagging something, you can tell safebooru that a tag is an artist tag by<br> 
+                   prefixing it with artist:. For example, tagging something artist:mark tree will<br> 
+                   tag a post with mark and tree. If the mark tag doesn't already exist, it'll be<br> 
+                   created with the tag type set to artist.
+                </p>
+
+                <h4 class="h4">Character</h4><br>
+                <p>Character tags identify the tag as a character. They work exactly like artist<br> 
+                   tags, only you prefix with "character" (or "char").</p>
+
+                <h4 class="h4">Copyright</h4><br>
+                <p>The copyright type indicates the tag represents an anime, a game, a novel, or<br> 
+                    some sort of copyrighted setting. Otherwise they work identically to character<br> 
+                    and artist tags, only you prefix with "copyright" instead (or "copy").</p>
+                    <br>
+                    <br>
+
+                <h4 style="color: green;" class="h4">Artifacts</h4><br>
+                <p>Artifacts are the residue of image processing usually left in the JPEG format. It<br> 
+                   makes the image look weird and blocky around parts of the drawing</p>
+
+                <h4 class="h4">Example</h4><br>
+                <p>For your convenience, here are links to some examples. Don't upload images<br> 
+                   with artifacts.</p>
+
+                
+                
+
+
+
+
+          
+
+         
+
+       
+
+
+
+          
+          
+        
+          
+
+
+
+        </body>
+</html>
